@@ -1,0 +1,30 @@
+@font-face {
+font-family: 'Proxima';
+font-display: swap;
+src: url('../fonts/ProximaNova-Regular.eot');
+src: url('') format('embedded-opentype'),
+url('../fonts/ProximaNova-Regular.woff') format('woff'),
+url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+font-weight: 401;
+font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Bold';
+    font-display: swap;
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 901;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-display: swap;
+    src: url('../fonts/OpenSans-Light.eot');
+    src: url('') format('embedded-opentype'),
+    url('../fonts/OpenSans-Light.woff') format('woff'),
+    url('../fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

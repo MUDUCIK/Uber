@@ -4,5 +4,48 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="description" content="Author: Renat Vasilenko, Работа в убере со своим авто или авто компании. Хорошая заработная плата, доступные условия")
+        link(rel="stylesheet", href="css/style.min.css")
         title Uber
     body
+        header.header
+            .container
+                nav.header__nav
+                    ul.header__menu
+                        li.header__item
+                            a.header__link(href="#") Главная
+                        li.header__item
+                            a.header__link(href="#") Со своим автомобилем
+                        li.header__item
+                            a.header__link(href="#") На автомобиле компании
+                        li.header__item
+                            a.header__link(href="#") Требования
+                        li.header__item
+                            a.header__link(href="#") Контакты
+                        li.header__item
+                            a.header__link(href="#") Оставить заявку
+        .subheader
+            .container
+                .row
+                    .col-md-5.offset-md-1
+                        a.subheader__logo(href="#")
+                            picture
+                                source(srcset="icons/logo.webp", type="image/webp")
+                                img(src="icons/logo.png", alt="logo", width="287px", height="32px")
+                        .subheader__official Официальный партнер Uber в Москве
+                    .col-md-2.offset-md-1
+                        .subheader__call Звоните нам ежедневно
+                        a.subheader__phone(href="tel:84957970988") 8 495 797 09 88
+                    .col-md-2
+                        button.header__button.button Заказать звонок
+        section.promo
+            .container
+                .row
+                    .col-md-10.offset-md-1
+                        h1.promo__header КОМПАНИЯ UBER PARTNERS!
+                        h2.promo__subheader ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
+                        p.promo__description.
+                                            Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
+                                            таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за пиковое время.
+                                            <br><br>
+                                            Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители у нас зарабатывают от 80000- 120000 в месяц.
+                        button.promo__button.button ОТПРАВИТЬ ЗАЯВКУ!
