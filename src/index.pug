@@ -37,8 +37,8 @@ html(lang="ru")
                             .subheader__call Звоните нам ежедневно
                             a.subheader__phone(href="tel:84957970988") 8 495 797 09 88
                         .col-md-2
-                            button.header__button.button Заказать звонок
-            section.promo
+                            button.header__button.button(disabled) Заказать звонок
+            main.promo
                 .container
                     .row
                         .col-md-10.offset-md-1
@@ -159,3 +159,24 @@ html(lang="ru")
                                     img.capabilities-item__img(src="img/capabilities-phone_6.png", alt="Еще телефон :U", type="image/png")
                                 .capabilities-item__text разделить стоимость поездки
                                 button.capabilities-item__plus
+            section.car
+                .car-bg
+                    picture
+                        source(srcset="img/car_bg.webp", type="image/webp")
+                        img(src="img/car_bg.png", alt="Background")
+                .car-background--black
+                .container
+                    div.car__header.text-block Возможности
+                    h2.car__subheader.subheader__text Выбор - отличная штука!
+                    p.car__text.text Закажите автомобиль, который подходит вам по стилю и бюджету
+                    .col-md-8.offset-md-2
+                        .car-container
+                            .car-container__circle
+                                h3.car-container__circle-header uberX
+                                p.car-container__circle-text доступный убер
+                            .car-container__img
+                                picture
+                                    source(srcset="img/uber_car.webp", type="image/webp")
+                                    img(src="img/uber_car.png", alt="Машина убер")
+                    p.car__text-subheader Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси
+
