@@ -1,13 +1,59 @@
 *
     font-family: 'Open Sans', sans-serif
     scroll-behavior: smooth
-p,h1,h2,h3,h4,h5,h6
-    margin: 0
+
+.subheader__text
+    text-align: center
+    width: 700px
+    margin: 38px auto 0 auto
+    color: #222222
+    font-family: "Proxima"
+    font-size: 38px
+    font-weight: 700
+    line-height: 38px
+    letter-spacing: 3px
+    text-transform: uppercase
+
+.text-block
+    display: inline-flex
+    position: absolute
+    justify-content: center
+    align-items: center
+    background-color: #000000
+    color: #ffffff
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+    padding: 5px 12px
+    max-width: 500px
+    top: 50px
+    left: 50%
+    transform: translateX(-50%)
+    overflow: hidden
+
+.page
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    overflow: hidden
+
+.text
+    text-align: center
+    color: #222222
+    font-size: 17px
+    line-height: 17px
+    font-weight: 700
+    margin-top: 12px
 
 @import "bootstrap-grid.min"
 @import "bootstrap-reboot.min"
+p,h1,h2,h3,h4,h5,h6
+    margin: 0
+    margin-bottom: 0
+    padding: 0
 @import "fonts"
 @import "var"
 @import "button"
 @import "invite"
 @import "benefits"
+@import "capabilities"

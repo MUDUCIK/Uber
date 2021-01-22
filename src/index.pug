@@ -23,92 +23,139 @@ html(lang="ru")
                             a.header__link(href="#") Контакты
                         li.header__item
                             a.header__link(href="#") Оставить заявку
-        .subheader
-            .container
-                .row
-                    .col-md-5.offset-md-1
-                        a.subheader__logo(href="#")
-                            picture
-                                source(srcset="icons/logo.webp", type="image/webp")
-                                img(src="icons/logo.png", alt="logo", width="287px", height="32px")
-                        .subheader__official Официальный партнер Uber в Москве
-                    .col-md-2.offset-md-1
-                        .subheader__call Звоните нам ежедневно
-                        a.subheader__phone(href="tel:84957970988") 8 495 797 09 88
-                    .col-md-2
-                        button.header__button.button Заказать звонок
-        section.promo
-            .container
-                .row
-                    .col-md-10.offset-md-1
-                        h1.promo__header КОМПАНИЯ UBER PARTNERS!
-                        h2.promo__subheader ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
-                        p.promo__description.
-                                            Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
-                                            таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за пиковое время.
-                                            <br><br>
-                                            Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители у нас зарабатывают от 80000- 120000 в месяц.
-                        button.promo__button.button ОТПРАВИТЬ ЗАЯВКУ!
-        section.benefits
-            .container
-                p.benefits__header преимущества
-                h2.benefits__subheader 8 причин работать с нами
-                .row
-                    .col-md-6
-                        .benefits__item
-                            .benefits__item-icon
+        .page
+            .subheader
+                .container
+                    .row
+                        .col-md-5.offset-md-1
+                            a.subheader__logo(href="#")
                                 picture
-                                    source(srcset="icons/purse.webp" type="image/webp" )
-                                    img(src="icons/purse.png", alt="Кошелек")
-                            p.benefits__item-text #[span.benefits__item-text--blue Никаких наличных, оплата происходит автоматически]<br>Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.
-                    .col-md-6
-                        .benefits__item
-                            .benefits__item-icon
+                                    source(srcset="icons/logo.webp", type="image/webp")
+                                    img(src="icons/logo.png", alt="logo", width="287px", height="32px")
+                            .subheader__official Официальный партнер Uber в Москве
+                        .col-md-2.offset-md-1
+                            .subheader__call Звоните нам ежедневно
+                            a.subheader__phone(href="tel:84957970988") 8 495 797 09 88
+                        .col-md-2
+                            button.header__button.button Заказать звонок
+            section.promo
+                .container
+                    .row
+                        .col-md-10.offset-md-1
+                            h1.promo__header КОМПАНИЯ UBER PARTNERS!
+                            h2.promo__subheader ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
+                            p.promo__description.
+                                                Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
+                                                таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за пиковое время.
+                                                <br><br>
+                                                Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители у нас зарабатывают от 80000- 120000 в месяц.
+                            button.promo__button.button ОТПРАВИТЬ ЗАЯВКУ!
+            section.benefits
+                .container
+                    div.text-block преимущества
+                    h2.subheader__text 8 причин работать с нами
+                    .row
+                        .col-md-6
+                            .benefits__item
+                                .benefits__item-icon
+                                    picture
+                                        source(srcset="icons/purse.webp" type="image/webp" )
+                                        img(src="icons/purse.png", alt="Кошелек")
+                                p.benefits__item-text #[span.benefits__item-text--blue Никаких наличных, оплата происходит автоматически]<br>Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.
+                        .col-md-6
+                            .benefits__item
+                                .benefits__item-icon
+                                    picture
+                                        source(srcset="icons/board.webp" type="image/webp" )
+                                        img(src="icons/board.png", alt="Доска с графиком")
+                                p.benefits__item-text #[span.benefits__item-text--blue Комиссия 8% + БОНУСЫ]<br>У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!
+                        .col-md-6
+                            .benefits__item
+                                .benefits__item-icon
+                                    picture
+                                        source(srcset="icons/money.webp" type="image/webp" )
+                                        img(src="icons/money.png", alt="Деньги")
+                                p.benefits__item-text #[span.benefits__item-text--blue Высокий доход с гарантированными выплатами]<br>Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.
+                        .col-md-6
+                            .benefits__item
+                                .benefits__item-icon
+                                    picture
+                                        source(srcset="icons/calendar.webp" type="image/webp" )
+                                        img(src="icons/calendar.png", alt="Календарь")
+                                p.benefits__item-text #[span.benefits__item-text--blue Работа в удобное время, никаких графиков]<br>Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!
+                        .col-md-6
+                            .benefits__item
+                                .benefits__item-icon
+                                    picture
+                                        source(srcset="icons/key.webp" type="image/webp" )
+                                        img(src="icons/key.png", alt="Ключ")
+                                p.benefits__item-text #[span.benefits__item-text--blue Комфортное, прозрачное и простое подключение]<br>Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!
+                        .col-md-6
+                            .benefits__item
+                                .benefits__item-icon
+                                    picture
+                                        source(srcset="icons/map.webp" type="image/webp" )
+                                        img(src="icons/map.png", alt="Карта")
+                                p.benefits__item-text #[span.benefits__item-text--blue Всегда большое количество заказов]<br>Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить.
+                        .col-md-6
+                            .benefits__item
+                                .benefits__item-icon
+                                    picture
+                                        source(srcset="icons/telephone.webp" type="image/webp" )
+                                        img(src="icons/telephone.png",alt="Телефон")
+                                p.benefits__item-text #[span.benefits__item-text--blue Круглосуточная поддержка]<br>В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.
+                        .col-md-6
+                            .benefits__item
+                                .benefits__item-icon
+                                    picture
+                                        source(srcset="icons/car.webp" type="image/webp" )
+                                        img(src="icons/car.png", alt="Машина")
+                                p.benefits__item-text #[span.benefits__item-text--blue Без шашечек и наклеек]<br>Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.  
+            section.capabilities
+                .container
+                    div.capabilities__header.text-block Возможности
+                    h2.capabilities__subheader.subheader__text мобильное приложение убер
+                    p.text Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон
+                    .capabilities__row.row
+                        .col-md-4
+                            .capabilities-item
                                 picture
-                                    source(srcset="icons/board.webp" type="image/webp" )
-                                    img(src="icons/board.png", alt="Доска с графиком")
-                            p.benefits__item-text #[span.benefits__item-text--blue Комиссия 8% + БОНУСЫ]<br>У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!
-                    .col-md-6
-                        .benefits__item
-                            .benefits__item-icon
+                                    source(srcset="img/capabilities-phone_1.webp", type="image/webp")
+                                    img.capabilities-item__img(src="img/capabilities-phone_1.png", alt="Телефон на заднем плане", type="image/png")
+                                .capabilities-item__text оформление заказа одним касанием
+                                button.capabilities-item__plus
+                        .col-md-4
+                            .capabilities-item
                                 picture
-                                    source(srcset="icons/money.webp" type="image/webp" )
-                                    img(src="icons/money.png", alt="Деньги")
-                            p.benefits__item-text #[span.benefits__item-text--blue Высокий доход с гарантированными выплатами]<br>Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.
-                    .col-md-6
-                        .benefits__item
-                            .benefits__item-icon
+                                    source(srcset="img/capabilities-phone_2.webp", type="image/webp")
+                                    img.capabilities-item__img(src="img/capabilities-phone_2.png", alt="Телефон другой телефон", type="image/png")
+                                .capabilities-item__text надежная подача
+                                button.capabilities-item__plus
+                        .col-md-4
+                            .capabilities-item
                                 picture
-                                    source(srcset="icons/calendar.webp" type="image/webp" )
-                                    img(src="icons/calendar.png", alt="Календарь")
-                            p.benefits__item-text #[span.benefits__item-text--blue Работа в удобное время, никаких графиков]<br>Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!
-                    .col-md-6
-                        .benefits__item
-                            .benefits__item-icon
+                                    source(srcset="img/capabilities-phone_3.webp", type="image/webp")
+                                    img.capabilities-item__img(src="img/capabilities-phone_3.png", alt="Еще телефон :U", type="image/png")
+                                .capabilities-item__text прозрачные цены
+                                button.capabilities-item__plus
+                        .col-md-4
+                            .capabilities-item
                                 picture
-                                    source(srcset="icons/key.webp" type="image/webp" )
-                                    img(src="icons/key.png", alt="Ключ")
-                            p.benefits__item-text #[span.benefits__item-text--blue Комфортное, прозрачное и простое подключение]<br>Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!
-                    .col-md-6
-                        .benefits__item
-                            .benefits__item-icon
+                                    source(srcset="img/capabilities-phone_4.webp", type="image/webp")
+                                    img.capabilities-item__img(src="img/capabilities-phone_4.png", alt="Еще телефон :U", type="image/png")
+                                .capabilities-item__text безналичная оплата
+                                button.capabilities-item__plus
+                        .col-md-4
+                            .capabilities-item
                                 picture
-                                    source(srcset="icons/map.webp" type="image/webp" )
-                                    img(src="icons/map.png", alt="Карта")
-                            p.benefits__item-text #[span.benefits__item-text--blue Всегда большое количество заказов]<br>Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить.
-                    .col-md-6
-                        .benefits__item
-                            .benefits__item-icon
+                                    source(srcset="img/capabilities-phone_5.webp", type="image/webp")
+                                    img.capabilities-item__img(src="img/capabilities-phone_5.png", alt="Еще телефон :U", type="image/png")
+                                .capabilities-item__text обратная связь
+                                button.capabilities-item__plus
+                        .col-md-4
+                            .capabilities-item
                                 picture
-                                    source(srcset="icons/telephone.webp" type="image/webp" )
-                                    img(src="icons/telephone.png",alt="Телефон")
-                            p.benefits__item-text #[span.benefits__item-text--blue Круглосуточная поддержка]<br>В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.
-                    .col-md-6
-                        .benefits__item
-                            .benefits__item-icon
-                                picture
-                                    source(srcset="icons/car.webp" type="image/webp" )
-                                    img(src="icons/car.png", alt="Машина")
-                            p.benefits__item-text #[span.benefits__item-text--blue Без шашечек и наклеек]<br>Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.  
-
-            
+                                    source(srcset="img/capabilities-phone_6.webp", type="image/webp")
+                                    img.capabilities-item__img(src="img/capabilities-phone_6.png", alt="Еще телефон :U", type="image/png")
+                                .capabilities-item__text разделить стоимость поездки
+                                button.capabilities-item__plus
