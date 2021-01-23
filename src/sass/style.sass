@@ -4,6 +4,14 @@
 button
     cursor: url('../cursors/cursor.cur'), pointer !important
 
+.section-header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    min-width: 470px
+    min-height: 85px
+
 .subheader__text
     text-align: center
     width: 700px
@@ -18,7 +26,6 @@ button
 
 .text-block
     display: inline-flex
-    position: absolute
     justify-content: center
     align-items: center
     background-color: #000000
@@ -28,9 +35,6 @@ button
     text-transform: uppercase
     padding: 5px 12px
     max-width: 500px
-    top: 50px
-    left: 50%
-    transform: translateX(-50%)
     overflow: hidden
 
 .page
@@ -62,3 +66,4 @@ p,h1,h2,h3,h4,h5,h6
 @import "benefits"
 @import "capabilities"
 @import "car"
+@import "requirements"

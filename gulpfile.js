@@ -31,6 +31,7 @@ gulp.task('styles', function(){
                 suffix: ".min",
               }))
             .pipe(autoprefixer({
+                grid: true,
                 cascade: false
             }))
             .pipe(cleanCSS({compatibility: 'ie8'}))

@@ -44,18 +44,20 @@ html(lang="ru")
                 .container
                     .row
                         .col-md-10.offset-md-1
-                            h1.promo__header КОМПАНИЯ UBER PARTNERS!
-                            h2.promo__subheader ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
-                            p.promo__description.
-                                                Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
-                                                таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за пиковое время.
-                                                <br><br>
-                                                Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители у нас зарабатывают от 80000- 120000 в месяц.
+                            .section-header
+                                h1.promo__header КОМПАНИЯ UBER PARTNERS!
+                                h2.promo__subheader ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
+                                p.promo__description.
+                                                    Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
+                                                    таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за пиковое время.
+                                                    <br><br>
+                                                    Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители у нас зарабатывают от 80000- 120000 в месяц.
                             button.promo__button.button ОТПРАВИТЬ ЗАЯВКУ!
             section.benefits
                 .container
-                    div.text-block преимущества
-                    h2.subheader__text 8 причин работать с нами
+                    .section-header
+                        div.text-block преимущества
+                        h2.subheader__text 8 причин работать с нами
                     .row
                         .col-md-6
                             .benefits__item
@@ -131,9 +133,10 @@ html(lang="ru")
                                 p.benefits__item-text #[span.benefits__item-text--blue Без шашечек и наклеек]<br>Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.  
             section.capabilities
                 .container
-                    div.capabilities__header.text-block Возможности
-                    h2.capabilities__subheader.subheader__text мобильное приложение убер
-                    p.text Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон
+                    .section-header
+                        div.capabilities__header.text-block Возможности
+                        h2.capabilities__subheader.subheader__text мобильное приложение убер
+                        p.text Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон
                     .capabilities__row.row
                         .col-md-4
                             .capabilities-item
@@ -198,9 +201,10 @@ html(lang="ru")
                         img(src="img/car_bg.png", alt="Background")
                 .car-background--black
                 .container
-                    div.car__header.text-block Возможности
-                    h2.car__subheader.subheader__text Выбор - отличная штука!
-                    p.car__text.text Закажите автомобиль, который подходит вам по стилю и бюджету
+                    .section-header
+                        div.car__header.text-block Возможности
+                        h2.car__subheader.subheader__text Выбор - отличная штука!
+                        p.car__text.text Закажите автомобиль, который подходит вам по стилю и бюджету
                     .col-md-8.offset-md-2
                         .car-container
                             .car-container__circle
@@ -213,4 +217,47 @@ html(lang="ru")
                                     |
                                     img(src="img/uber_car.png", alt="Машина убер")
                     p.car__text-subheader Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси
-
+            section.requirements
+                .container
+                    .section-header
+                        div.capabilities__header.text-block Возможности
+                        h2.capabilities__subheader.subheader__text условия и требования
+                    .row.requirements-row
+                        .col-md-5
+                            .requirements-item
+                                h3.requirements-item__header УСЛОВИЯ: со своим авто:
+                                ul.requirements-item-list
+                                    li.requirements-item-list__item Подключаем к системе UBER  под 10%
+                                    li.requirements-item-list__item Ни каких взносов  0%!
+                                    li.requirements-item-list__item Можем подключать удаленно без приезда в офис
+                                    li.requirements-item-list__item ИП не требуется
+                                    li.requirements-item-list__item Заказы распределяются без учета рейтинга ближайшим водителям
+                                    li.requirements-item-list__item Работа только по безналичному расчету
+                                    li.requirements-item-list__item Деньги перечисляем на карту водителю или наличными в офисе
+                                p.requirements-item__text В день заработок составляет 7000-12000р + бонус 3000т рублей
+                        .col-md-5.offset-md-1
+                            .requirements-item
+                                h3.requirements-item__header УСЛОВИЯ: на авто компании:
+                                ul.requirements-item-list
+                                    li.requirements-item-list__item Предоставляем авто без залога
+                                    li.requirements-item-list__item Без ежедневных выплат по аренде
+                                    li.requirements-item-list__item Среда пятница и суббота работа на компанию остальные дни вы работаете на себя
+                        .col-md-5
+                            .requirements-item--red
+                                h3.requirements-item__header--red ТРЕБОВАНИЕ:
+                                ul.requirements-item-list
+                                    li.requirements-item-list__item--red Наличие автомобиля без рекламы
+                                    li.requirements-item-list__item--red Автомобиль не должен быть желтый и не с желтыми номерами
+                                    li.requirements-item-list__item--red Машина не старше 3 лет
+                                    li.requirements-item-list__item--red Стаж вождения не менее 3 лет
+                                    li.requirements-item-list__item--red Дивайс на системе андроид 4.0и выше(самсунг)
+                        .col-md-5.offset-md-1
+                            .requirements-item--red
+                                h3.requirements-item__header--red ДОКУМЕНТЫ:
+                                ul.requirements-item-list
+                                    li.requirements-item-list__item--red Права 2 стороны
+                                    li.requirements-item-list__item--red Паспорт лицевая сторона
+                                    li.requirements-item-list__item--red СтС
+                                    li.requirements-item-list__item--red Лицензия( если есть)
+                                    li.requirements-item-list__item--red Номер телефона
+                                    li.requirements-item-list__item--red Номер карты для перечисления денег(указать в письме)!
