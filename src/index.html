@@ -12,10 +12,10 @@
       <div class="container">
         <nav class="header__nav">
           <ul class="header__menu">
-            <li class="header__item"><a class="header__link" href="#">Главная</a></li>
-            <li class="header__item"><a class="header__link" href="#">Со своим автомобилем</a></li>
-            <li class="header__item"><a class="header__link" href="#">На автомобиле компании</a></li>
-            <li class="header__item"><a class="header__link" href="#">Требования</a></li>
+            <li class="header__item"><a class="header__link" href="#benefits">Главная</a></li>
+            <li class="header__item"><a class="header__link" href="#requirements">Со своим автомобилем</a></li>
+            <li class="header__item"><a class="header__link" href="#requirements">На автомобиле компании</a></li>
+            <li class="header__item"><a class="header__link" href="#requirements">Требования</a></li>
             <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
             <li class="header__item"><a class="header__link" href="#">Оставить заявку</a></li>
           </ul>
@@ -61,7 +61,7 @@
           </div>
         </div>
       </main>
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <div class="container">
           <div class="section-header">
             <div class="text-block">преимущества</div>
@@ -159,7 +159,7 @@
           </div>
         </div>
       </section>
-      <section class="capabilities">
+      <section class="capabilities" id="capabilities">
         <div class="container">
           <div class="section-header">
             <div class="capabilities__header text-block">Возможности</div>
@@ -234,7 +234,7 @@
         <div class="car-bg">
           <picture>
             <source srcset="img/car_bg.webp" type="image/webp"/>
-            <img src="img/car_bg.png" alt="Background"/>
+            <img src="img/car_bg.png" alt="Background" height="420px"/>
           </picture>
         </div>
         <div class="car-background--black"></div>
@@ -261,7 +261,7 @@
           <p class="car__text-subheader">Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси</p>
         </div>
       </section>
-      <section class="requirements">
+      <section class="requirements" id="requirements">
         <div class="container">
           <div class="section-header">
             <div class="capabilities__header text-block">Возможности</div>
@@ -321,6 +321,62 @@
           </div>
         </div>
       </section>
+      <section class="world">
+        <div class="container">
+          <div class="section-header">
+            <div class="world__header text-block">Города</div>
+            <h2 class="world__subheader subheader__text">По всему миру</h2>
+            <p class="world-text text">Мы в вашем городе и по всему миру</p>
+          </div>
+          <div class="world_bg">
+            <picture>
+              <source srcset="img/world_bg.webp" type="image/webp"/><img src="img/world_bg.jpeg" alt="Изображение континентов"/>
+            </picture>
+          </div><a class="world-bottom-link" href="#">посмотреть все города</a>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <ul class="footer-wrapper-social">
+            <li class="footer-wrapper-social__li"><a class="footer-wrapper-social__li-link" href="https://www.facebook.com/" target="_newblank"><span class="icon-facebook"></span></a></li>
+            <li class="footer-wrapper-social__li"><a class="footer-wrapper-social__li-link" href="https://twitter.com/" target="_newblank"><span class="icon-twitter"></span></a></li>
+            <li class="footer-wrapper-social__li"><a class="footer-wrapper-social__li-link" href="https://www.linkedin.com/" target="_newblank"><span class="icon-linkedin"></span></a></li>
+            <li class="footer-wrapper-social__li"><a class="footer-wrapper-social__li-link" href="https://instagram.com/" target="_newblank"><span class="icon-instagram"></span></a></li>
+          </ul>
+          <div class="footer-wrapper-block">
+            <nav class="footer-wrapper-block-nav">
+              <ul class="footer-wrapper-block-nav__ul">
+                <li class="footer-wrapper-block-nav__ul__li"><a class="footer-wrapper-block-nav__ul__li-link" href="#">на главную</a></li>
+                <li class="footer-wrapper-block-nav__ul__li"><a class="footer-wrapper-block-nav__ul__li-link" href="#">города</a></li>
+                <li class="footer-wrapper-block-nav__ul__li"><a class="footer-wrapper-block-nav__ul__li-link" href="#">для водителей</a></li>
+              </ul>
+            </nav>
+            <nav class="footer-wrapper-block-additionally">
+              <ul class="footer-wrapper-block-additionally-ul">
+                <li class="footer-wrapper-block-additionally-ul__li"><a href="#">центр поддержки</a></li>
+                <li class="footer-wrapper-block-additionally-ul__li"><a href="#">вакансии</a></li>
+                <li class="footer-wrapper-block-additionally-ul__li"><a href="#">разработчики</a></li>
+                <li class="footer-wrapper-block-additionally-ul__li"><a href="#">блог</a></li>
+                <li class="footer-wrapper-block-additionally-ul__li"><a href="#">о нас</a></li>
+              </ul>
+            </nav>
+          </div>
+          <ul class="footer-wrapper-markets">
+            <li class="footer-wrapper-markets__li"><a class="footer-wrapper-markets__li__link" href="#">
+                <picture>
+                  <source srcset="img/appstore.webp" type="image/webp"/><img src="img/appstore.png" alt="App Store"/>
+                </picture></a></li>
+            <li class="footer-wrapper-markets__li"><a class="footer-wrapper-markets__li__link" href="#">
+                <picture>
+                  <source srcset="img/gologoole_play.webp" type="image/webp"/><img src="img/gologoole_play.png" alt="Google Play"/>
+                </picture></a></li>
+            <li class="footer-wrapper-markets__li"><a class="footer-wrapper-markets__li__link" href="#">
+                <picture>
+                  <source srcset="img/Windows_store.webp" type="image/webp"/><img src="img/Windows_store.png" alt="Windows Store"/>
+                </picture></a></li>
+          </ul>
+        </div><a class="footer__language" href="#">русский</a>
+      </footer>
     </div>
   </body>
 </html>

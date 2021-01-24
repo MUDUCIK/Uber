@@ -1,0 +1,108 @@
+.footer
+    width: 100%
+    min-height: 150px
+    margin-top: auto
+    position: relative
+    padding-bottom: 39px
+    text-align: center
+    &::before
+        content: ''
+        display: block
+        width: 299px
+        height: 4px
+        background-color: $main-blue
+        margin: 14px auto 0px auto
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        bottom: 0
+        width: 100%
+        height: 8px
+        background-color: #070716
+    &-wrapper
+        width: 100%
+        display: flex
+        margin: 0 auto
+        padding: 0px 23px 0px 23px
+        justify-content: space-between
+        &-social
+            list-style: none
+            display: flex
+            justify-content: space-between
+            width: 153px
+            height: 32px
+            margin: 0
+            padding: 0
+            margin-top: 42px
+            &__li
+                background-color: #000
+                border-radius: 100%
+                width: 32px
+                height: 32px
+                &-link
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 32px
+                    height: 32px
+                    color: #ffffff
+                    background-color: #000
+                    transition: all .3s
+                    box-shadow: 0px 0px 0px 0px #32323200
+                    border-radius: 100%
+                    &:hover
+                        color: #ffffff
+                        transform: rotate(360deg)
+                        box-shadow: 0px 0px 0px 5px $plug
+        &-block
+            display: flex
+            flex-direction: column
+            align-items: center
+            min-width: 390px
+            margin: 34px auto 0px 28.8%
+            &-nav__ul
+                min-width: 365px
+                display: flex
+                justify-content: space-between
+                list-style: none
+                margin: 0
+                padding: 0
+                &__li-link
+                    font-size: 15px
+                    font-weight: 600
+                    color: #000000
+                    text-transform: uppercase
+                    padding: 0px 10px 0px 10px
+            &-additionally-ul
+                display: flex
+                justify-content: space-between
+                align-items: center
+                min-width: 480px
+                margin: 0
+                padding: 0
+                margin-top: 8px
+                margin-bottom: 16px
+                list-style: none
+                a
+                    padding: 0px 10px 0px 10px
+                    color: #999999
+                    font-size: 13px
+                    line-height: 13px
+                    font-weight: 300
+                    text-transform: uppercase
+        &-markets
+            display: flex
+            list-style: none
+            width: 300px
+            justify-content: space-between
+            margin: 0
+            padding: 0
+            margin-top: 39px
+    &__language
+        color: $main-blue
+        font-size: 11px
+        line-height: 11px
+        padding: 0px 20px 0px 20px
+        font-weight: 600
+        text-transform: uppercase
