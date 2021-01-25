@@ -1,35 +1,10 @@
 <!DOCTYPE html>
 html(lang="ru")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(name="description", content="Работа в убере со своим авто или авто компании. Хорошая заработная плата, доступные условия")
-        meta(name="author", content="Renat Vasilenko")
-        link(rel="preload", href="fonts/ProximaNova-Bold.woff", as="font", type="font/woff", crossorigin)
-        link(rel="preload", href="fonts/ProximaNova-Regular.woff", as="font", type="font/woff", crossorigin)
-        link(rel="preload", href="fonts/icomoon.ttf?o9ysky", as="font", type="font/woff", crossorigin)
-        link(rel="preload", href="css/fonts.css", as="style")
-        link(rel="preload", href="css/style.min.css", as="style")
-        link(rel="stylesheet", href="css/fonts.css")
-        link(rel="stylesheet", href="css/style.min.css")
+        include head.pug
         title Uber
     body
-        header.header
-            .container
-                nav.header__nav
-                    ul.header__menu
-                        li.header__item
-                            a.header__link(href="#benefits") Главная
-                        li.header__item
-                            a.header__link(href="#requirements") Со своим автомобилем
-                        li.header__item
-                            a.header__link(href="#requirements") На автомобиле компании
-                        li.header__item
-                            a.header__link(href="#requirements") Требования
-                        li.header__item
-                            a.header__link(href="#") Контакты
-                        li.header__item
-                            a.header__link(href="#") Оставить заявку
+        include header.pug
         .page
             .subheader
                 .container
@@ -55,10 +30,10 @@ html(lang="ru")
                                 h1.promo__header КОМПАНИЯ UBER PARTNERS!
                                 h2.promo__subheader ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
                                 p.promo__description.
-                                                    Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
-                                                    таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за пиковое время.
-                                                    <br><br>
-                                                    Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители у нас зарабатывают от 80000- 120000 в месяц.
+                                    Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
+                                    таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за пиковое время.
+                                    <br><br>
+                                    Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители у нас зарабатывают от 80000- 120000 в месяц.
                             button.promo__button.button ОТПРАВИТЬ ЗАЯВКУ!
             section.benefits#benefits
                 .container
@@ -278,57 +253,5 @@ html(lang="ru")
                         picture
                             source(srcset="img/world_bg.webp", type="image/webp")
                             img(src="img/world_bg.jpeg", alt="Изображение континентов")
-                    a(href="#").world-bottom-link посмотреть все города
-            footer.footer
-                .footer-wrapper
-                    ul.footer-wrapper-social
-                        li.footer-wrapper-social__li
-                            a.footer-wrapper-social__li-link(href="https://www.facebook.com/", target="_blank")
-                                span.icon-facebook
-                        li.footer-wrapper-social__li
-                            a.footer-wrapper-social__li-link(href="https://twitter.com/", target="_blank")
-                                span.icon-twitter
-                        li.footer-wrapper-social__li
-                            a.footer-wrapper-social__li-link(href="https://www.linkedin.com/", target="_blank")
-                                span.icon-linkedin
-                        li.footer-wrapper-social__li
-                            a.footer-wrapper-social__li-link(href="https://instagram.com/", target="_blank")
-                                span.icon-instagram
-                    .footer-wrapper-block
-                        nav.footer-wrapper-block-nav
-                            ul.footer-wrapper-block-nav__ul
-                                li.footer-wrapper-block-nav__ul__li
-                                    a.footer-wrapper-block-nav__ul__li-link(href="#") на главную
-                                li.footer-wrapper-block-nav__ul__li
-                                    a.footer-wrapper-block-nav__ul__li-link(href="#") города
-                                li.footer-wrapper-block-nav__ul__li
-                                    a.footer-wrapper-block-nav__ul__li-link(href="#") для водителей
-                        nav.footer-wrapper-block-additionally
-                            ul.footer-wrapper-block-additionally-ul
-                                li.footer-wrapper-block-additionally-ul__li
-                                    a(href="#") центр поддержки
-                                li.footer-wrapper-block-additionally-ul__li
-                                    a(href="#") вакансии
-                                li.footer-wrapper-block-additionally-ul__li
-                                    a(href="#") разработчики
-                                li.footer-wrapper-block-additionally-ul__li
-                                    a(href="#") блог
-                                li.footer-wrapper-block-additionally-ul__li
-                                    a(href="#") о нас
-                    ul.footer-wrapper-markets
-                        li.footer-wrapper-markets__li
-                            a.footer-wrapper-markets__li__link(href="#", target="_blank")
-                                picture
-                                    source(srcset="img/appstore.webp", type="image/webp")
-                                    img(src="img/appstore.png", alt="App Store")
-                        li.footer-wrapper-markets__li
-                            a.footer-wrapper-markets__li__link(href="#", target="_blank")
-                                picture
-                                    source(srcset="img/gologoole_play.webp", type="image/webp")
-                                    img(src="img/gologoole_play.png", alt="Google Play")
-                        li.footer-wrapper-markets__li
-                            a.footer-wrapper-markets__li__link(href="#", target="_blank")
-                                picture
-                                    source(srcset="img/Windows_store.webp", type="image/webp")
-                                    img(src="img/Windows_store.png", alt="Windows Store")
-                a(href="#").footer__language русский
+                    a(href="second_page.html").world-bottom-link посмотреть все города
+            include footer.pug
