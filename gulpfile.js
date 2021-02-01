@@ -11,7 +11,7 @@ gulp.task('pug', function(){
 		.pipe(pug({
             pretty: true
         }))
-		.pipe(gulp.dest('src'))
+		.pipe(gulp.dest("src"))
 });
 
 // Static server
@@ -41,7 +41,7 @@ gulp.task('styles', function(){
 
 gulp.task('watch', function(){
 	gulp.watch("src/sass/*.+(scss|sass)", gulp.parallel("styles"));
-	gulp.watch('src/**/*.pug', gulp.parallel('pug'));
+	gulp.watch('src/*.pug', gulp.parallel('pug'));
     gulp.watch("src/*.html").on("change", browserSync.reload);
     gulp.watch("src/js/*.js").on("change", browserSync.reload);
 });
