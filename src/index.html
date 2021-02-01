@@ -19,37 +19,38 @@
   </head>
   <body>
     <noscript>
-      <p>Ваш браузер не поддерживает скрипты или они были выключены пользователем!</p>
+      <p class="noscript__p">Ваш браузер не поддерживает скрипты или они были выключены пользователем!</p>
     </noscript>
-    <header class="header">
-      <div class="container">
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__item"><a class="header__link" href="index.html">Главная</a></li>
-            <li class="header__item"><a class="header__link" href="#requirements">Со своим автомобилем</a></li>
-            <li class="header__item"><a class="header__link" href="#requirements">На автомобиле компании</a></li>
-            <li class="header__item"><a class="header__link" href="#requirements">Требования</a></li>
-            <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
-            <li class="header__item"><a class="header__link" href="#">Оставить заявку</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
     <div class="page">
+      <header class="header">
+        <div class="container">
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__item"><a class="header__link" href="index.html">Главная</a></li>
+              <li class="header__item"><a class="header__link" href="#requirements">Со своим автомобилем</a></li>
+              <li class="header__item"><a class="header__link" href="#requirements">На автомобиле компании</a></li>
+              <li class="header__item"><a class="header__link" href="#requirements">Требования</a></li>
+              <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+              <li class="header__item"><a class="header__link" href="#">Оставить заявку</a></li>
+            </ul>
+            <div class="header__hamburger"><span></span><span></span><span></span></div>
+          </nav>
+        </div>
+      </header>
       <div class="subheader">
         <div class="container">
           <div class="row header__row">
-            <div class="col-md-5 offset-md-1 col-lg-5 offset-lg-0"><a class="subheader__logo" href="#">
+            <div class="col-md-5 col-lg-5 offset-lg-0"><a class="subheader__logo" href="#">
                 <picture>
                   <source srcset="icons/logo.webp" type="image/webp"/>
                   <img src="icons/logo.png" alt="logo" width="287px" height="32px"/>
                 </picture></a>
               <div class="subheader__official">Официальный партнер Uber в Москве</div>
             </div>
-            <div class="col-md-2 offset-md-1 col-lg-3 offset-lg-1">
+            <div class="col-md-3 offset-md-1 col-lg-3 offset-lg-1">
               <div class="subheader__call">Звоните нам ежедневно</div><a class="subheader__phone" href="tel:84957970988">8 495 797 09 88</a>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3 col-lg-2">
               <button class="header__button button" disabled="disabled">Заказать звонок</button>
             </div>
           </div>
@@ -59,7 +60,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-10 offset-md-1">
-              <div class="section-header">
+              <div class="promo-section__header section-header">
                 <h1 class="promo__header">КОМПАНИЯ UBER PARTNERS!</h1>
                 <h2 class="promo__subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
                 <p class="promo__description">
@@ -163,7 +164,7 @@
                 <div class="benefits__item-icon">
                   <picture>
                     <source srcset="icons/car.webp" type="image/webp"/>
-                    <img src="icons/car.png" alt="Машина"/>
+                    <img class="benefits__item-icon__car" src="icons/car.png" alt="Машина"/>
                   </picture>
                 </div>
                 <p class="benefits__item-text"><span class="benefits__item-text--blue">Без шашечек и наклеек</span><br>Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.  </p>
@@ -296,7 +297,7 @@
                 <p class="requirements-item__text">В день заработок составляет 7000-12000р + бонус 3000т рублей</p>
               </div>
             </div>
-            <div class="col-md-5 offset-md-1">
+            <div class="col-md-5 offset-md-2 col-lg-5 offset-lg-1">
               <div class="requirements-item">
                 <h3 class="requirements-item__header">УСЛОВИЯ: на авто компании:</h3>
                 <ul class="requirements-item-list">
@@ -318,7 +319,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-5 offset-md-1">
+            <div class="col-md-5 offset-md-2 col-lg-5 offset-lg-1">
               <div class="requirements-item--red">
                 <h3 class="requirements-item__header--red">ДОКУМЕНТЫ:</h3>
                 <ul class="requirements-item-list">
@@ -391,5 +392,6 @@
         </div><a class="footer__language" href="#">русский</a>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

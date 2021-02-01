@@ -1,0 +1,59 @@
+.header
+	position: fixed
+	top: 0
+	z-index: 2
+	background-color: #212121
+	min-height: 50px
+	width: 100%
+	&__nav
+		padding: 13px 70px
+	&__menu
+		display: flex
+		justify-content: space-between
+		margin: 0
+		list-style-type: none
+	&__link
+		color: #fff
+		font-size: 15px
+		line-height: 15px
+		font-weight: 300
+		transition: all .2s
+		&:hover
+			color: rgb(61, 196, 223)
+			text-decoration: none
+	&__item
+		border-right: 1px solid rgba(255, 255, 255, 0.363)
+		padding-right: 26px
+		&:last-child
+			border-right: none
+	&__button
+		margin-top: 17px
+	&__hamburger
+		display: none
+		width: 30px
+		height: 12px
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		cursor: pointer
+		span
+			display: block
+			position: relative
+			height: 2px
+			width: 100%
+			background-color: #ffffff
+			margin-bottom: 3px
+			transition: all .3s
+			&:last-child
+				margin-bottom: 0
+		&--active
+			span
+				margin-bottom: -2px
+				&:first-child
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:last-child
+					transform: translateY(3px) rotate(45deg)
+					

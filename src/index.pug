@@ -5,12 +5,12 @@ html(lang="ru")
         title Uber
     body
         noscript #[p.noscript__p Ваш браузер не поддерживает скрипты или они были выключены пользователем!]
-        include header.pug
         .page
+            include header.pug
             .subheader
                 .container
                     .row.header__row
-                        .col-md-5.offset-md-1.col-lg-5.offset-lg-0
+                        .col-md-5.col-lg-5.offset-lg-0
                             a.subheader__logo(href="#")
                                 picture
                                     source(srcset="icons/logo.webp", type="image/webp")
@@ -18,16 +18,16 @@ html(lang="ru")
                                     |
                                     img(src="icons/logo.png", alt="logo", width="287px", height="32px")
                             .subheader__official Официальный партнер Uber в Москве
-                        .col-md-2.offset-md-1.col-lg-3.offset-lg-1
+                        .col-md-3.offset-md-1.col-lg-3.offset-lg-1
                             .subheader__call Звоните нам ежедневно
                             a.subheader__phone(href="tel:84957970988") 8 495 797 09 88
-                        .col-md-2
+                        .col-md-3.col-lg-2
                             button.header__button.button(disabled) Заказать звонок
             main.promo
                 .container
                     .row
                         .col-md-10.offset-md-1
-                            .section-header
+                            .promo-section__header.section-header
                                 h1.promo__header КОМПАНИЯ UBER PARTNERS!
                                 h2.promo__subheader ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
                                 p.promo__description.
@@ -112,7 +112,7 @@ html(lang="ru")
                                         source(srcset="icons/car.webp" type="image/webp")
                                         |
                                         |
-                                        img(src="icons/car.png", alt="Машина")
+                                        img.benefits__item-icon__car(src="icons/car.png", alt="Машина")
                                 p.benefits__item-text #[span.benefits__item-text--blue Без шашечек и наклеек]<br>Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.  
             section.capabilities#capabilities
                 .container
@@ -218,7 +218,7 @@ html(lang="ru")
                                     li.requirements-item-list__item Работа только по безналичному расчету
                                     li.requirements-item-list__item Деньги перечисляем на карту водителю или наличными в офисе
                                 p.requirements-item__text В день заработок составляет 7000-12000р + бонус 3000т рублей
-                        .col-md-5.offset-md-1
+                        .col-md-5.offset-md-2.col-lg-5.offset-lg-1
                             .requirements-item
                                 h3.requirements-item__header УСЛОВИЯ: на авто компании:
                                 ul.requirements-item-list
@@ -234,7 +234,7 @@ html(lang="ru")
                                     li.requirements-item-list__item--red Машина не старше 3 лет
                                     li.requirements-item-list__item--red Стаж вождения не менее 3 лет
                                     li.requirements-item-list__item--red Дивайс на системе андроид 4.0и выше(самсунг)
-                        .col-md-5.offset-md-1
+                        .col-md-5.offset-md-2.col-lg-5.offset-lg-1
                             .requirements-item--red
                                 h3.requirements-item__header--red ДОКУМЕНТЫ:
                                 ul.requirements-item-list
@@ -256,3 +256,4 @@ html(lang="ru")
                             img(src="img/world_bg.jpeg", alt="Изображение континентов")
                     a(href="second_page.html").world-bottom-link посмотреть все города
             include footer.pug
+        include script.pug

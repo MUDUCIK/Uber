@@ -7,14 +7,17 @@
     .row
         display: flex
         justify-content: center
-        align-items: center
+        align-items: flex-start
         width: 100%
         min-height: 900px
     &__item
         display: flex
-        align-items: center
+        align-items: flex-start
         justify-content: center
         margin-top: 35px
+        max-height: 500px
+        min-height: 112px
+        overflow: hidden
         &-icon
             display: flex
             justify-content: center
@@ -36,7 +39,8 @@
             font-family: "Proxima Bold"
         &-text
             width: 342px
-            height: 142px
+            height: 100%
             font-size: 15px
             font-weight: 300
             line-height: 22px
+            overflow: hidden
