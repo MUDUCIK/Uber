@@ -1,0 +1,22 @@
+window.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".header__menu"),
+    menuItem = document.querySelectorAll(".header__menu"),
+    hamburger = document.querySelector(".header__hamburger");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("header__hamburger--active");
+    menu.classList.toggle("header__menu--active");
+  });
+
+  menuItem.forEach((item) => {
+    item.addEventListener("click", () => {
+      hamburger.classList.toggle("header__hamburger--active");
+      menu.classList.toggle("header__menu--active");
+    });
+  });
+});
+
+function send() {
+  let button = document.getElementsByClassName("promo__button button")[0];
+  button.innerHTML="Отправлено!";
+}
