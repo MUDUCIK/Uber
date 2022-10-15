@@ -53,7 +53,7 @@ Unfinished uber site.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/64277973/195982904-e6284b24-310b-4bda-a167-35ca91199356.png"
-     width="800"
+     width="400"
 />
 </p>
 
