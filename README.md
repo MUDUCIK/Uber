@@ -22,7 +22,7 @@
 <img src="https://img.shields.io/badge/clean%20css-4.3.0-F1CCAF?style=for-the-badge">
 </a>
 
-<a href="https://www.npmjs.com/package/gulp-file-include" target="_blank">
+<a href="https://www.npmjs.com/package/pug" target="_blank">
 <img src="https://img.shields.io/badge/PUG(JADE)-2.3.0-A86454?style=for-the-badge&logo=Pug">
 </a>
 
