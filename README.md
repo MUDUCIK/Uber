@@ -41,7 +41,7 @@ Unfinished uber site.
 
 ## Demo
 
-[https://mudaston.github.io/Uber/](https://mudaston.github.io/Uber/)
+[mudaston.github.io/Uber](https://mudaston.github.io/Uber/)
 
 <br/>
 
